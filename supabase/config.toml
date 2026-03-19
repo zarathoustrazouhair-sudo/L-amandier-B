@@ -397,3 +397,25 @@ entrypoint = "./functions/jwt-hook/index.ts"
 # Specifies static files to be bundled with the function. Supports glob patterns.
 # For example, if you want to serve static HTML pages in your function:
 # static_files = [ "./functions/jwt-hook/*.html" ]
+
+[functions.notify-payment-validated]
+enabled = true
+verify_jwt = true
+import_map = "./functions/notify-payment-validated/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/notify-payment-validated/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/notify-payment-validated/*.html" ]
+
+[functions.notify-incident-assigned]
+enabled = true
+verify_jwt = true
+import_map = "./functions/notify-incident-assigned/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/notify-incident-assigned/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/notify-incident-assigned/*.html" ]
