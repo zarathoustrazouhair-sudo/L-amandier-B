@@ -1,36 +1,8 @@
-# HANDOFF — Prompt 21 — $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+# Amandier Syndic - Handoff Document
 
-## 1. Execution Status
-- Prompt 21 Status: COMPLETE
-- Phase 5: COMPLETE
-- premium_theme: COMPLETE
-- run_zoned_guarded: VERIFIED
-
-## 2. Completed Files (Do not modify these in future sessions unless commanded)
-- AGENTS.md
-- SKILL.md
-- HANDOFF.md
-- lib/core/theme/app_colors.dart
-- lib/core/theme/app_theme.dart
-- lib/core/errors/logger_service.dart
-- lib/main.dart
-- lib/presentation/screens/auth/login_screen.dart
-
-## 3. Pending Tasks From This Session
-- [ ] Await next instruction from Architect
-
-## 4. Programmatic Test Results (RLS / Build / Edge)
-```text
-[OK] flutter analyze (0 issues in targeted folders)
-[OK] flutter build apk --debug (Success)
-```
-
-5. Build_runner & DB Status
- * build_runner: PENDING
- * DB Schema/Types: PENDING
-
-6. Next Required Prompt
- * Prompt 22: [Awaiting Architect instruction for next phase]
-
-7. Known Issues / Blockers
- * None
+## Current Status (Handoff 22 - Verified & Locked)
+- Scaffolded Resident Dashboard (`home_screen.dart`).
+- Constructed polymorphic `SyndicFeedWidget` handling Incidents, Invoices, and Announcements with unified timeline.
+- Applied non-Euclidean aesthetics with "Control Tensor" top section and polyrhythmic `AsymmetricSkeletonLoader`.
+- Extracted exact chromatic DNA from the root `logo_amandier.jpg` mapping to theme variables (`#204060`, `#404060`, `#c0a060`, `#a08040`, `#f4f0e5`).
+- **Build Status**: APK debug build succeeds. All zero-crash tolerance and memory rules followed.
