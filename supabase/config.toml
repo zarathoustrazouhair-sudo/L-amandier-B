@@ -430,3 +430,25 @@ entrypoint = "./functions/send-relance-batch/index.ts"
 # Specifies static files to be bundled with the function. Supports glob patterns.
 # For example, if you want to serve static HTML pages in your function:
 # static_files = [ "./functions/send-relance-batch/*.html" ]
+
+[functions.generate-document-hash]
+enabled = true
+verify_jwt = true
+import_map = "./functions/generate-document-hash/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/generate-document-hash/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/generate-document-hash/*.html" ]
+
+[functions.verify-document]
+enabled = true
+verify_jwt = true
+import_map = "./functions/verify-document/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/verify-document/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/verify-document/*.html" ]
