@@ -35,8 +35,10 @@ ARCHITECTURAL LAWS (NON-NEGOTIABLE)
  * LAW-08 (TONE ENFORCEMENT): All client-facing strings must be amiable and non-coercive. Zero legal threats.
  * LAW-09 (OFFLINE RESILIENCE): Implement a Last Known Good Cache (LKGC) for all data providers.
  * LAW-10 (AUDIT TRAIL): Every state-mutating operation requires an atomic write to the audit_log table.
+
 RLS PROOF OF CONCEPT REQUIREMENT
 No Database task is COMPLETE until you provide a programmatic test log proving isolation (e.g., User A cannot read User B's financial data). Output this log in HANDOFF.md under "## RLS TEST RESULTS".
+
 SCHEMA DRIFT RULE
 After every database migration, you must run type generation:
 supabase gen types typescript --local > lib/types/database.types.ts (or the Dart equivalent).

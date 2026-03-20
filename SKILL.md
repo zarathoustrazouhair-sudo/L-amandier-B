@@ -36,14 +36,17 @@ Deno.serve(async (req) => {
 
 FCM TOKEN LIFECYCLE (FLUTTER CLIENT PROTOCOL)
 The client handles token registration ONLY.
+```dart
 // Execute ONCE at app startup
 FirebaseMessaging.instance.onTokenRefresh.listen((newToken) {
   ref.read(fcmTokenRepositoryProvider).upsertToken(newToken);
 });
 final token = await FirebaseMessaging.instance.getToken();
 if (token != null) ref.read(fcmTokenRepositoryProvider).upsertToken(token);
+```
 
 Target: Upsert to fcm_tokens table.
+
 ENVIRONMENT VARIABLES (SECRETS)
 You must ensure these exist in the Supabase local/remote secrets before testing:
  * SUPABASE_URL
