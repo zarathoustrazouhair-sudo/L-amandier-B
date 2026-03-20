@@ -24,6 +24,7 @@ class Incident with _$Incident {
     required String titre,
     String? description,
     @Default(IncidentStatus.ouvert) IncidentStatus statut,
+    @Default(IncidentPriority.low) IncidentPriority priorite, // Added priorite for incident provider
     @JsonKey(name: 'appartement_id') String? appartementId,
     @JsonKey(name: 'assigne_a') String? assigneA,
     @JsonKey(name: 'updated_at') required DateTime updatedAt,
