@@ -9,8 +9,7 @@ enum DocumentType {
   convocation_ag,
   feuille_presence_ag,
   pv_ag,
-  bon_intervention,
-  decharge_employe
+  bon_intervention
 }
 
 @freezed

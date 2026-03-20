@@ -1,0 +1,6 @@
+Because amandier_b_syndic depends on json_serializable ^8.0.0 which doesn't match any versions, version solving failed.
+
+
+You can try the following suggestion to make the pubspec resolve:
+* Consider downgrading your constraint on json_serializable: flutter pub add dev:json_serializable:^6.9.5
+Failed to update packages.
